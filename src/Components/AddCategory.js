@@ -5,29 +5,30 @@ export const AddCategory = ({ setCategories }) => {
 
     const [inputValue, setInputValue] = useState('');
 
-    const handleInputChange = ( e ) => {
-        setInputValue(e.target.value); 
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
     }
 
-    const handleSubmit = ( e ) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
-        if ( inputValue.trim().length > 2 ) {
+        if (inputValue.trim().length > 2) {
             // setCategories( categories => [ inputValue, ...categories ]);
-            setCategories( inputValue );
+            setCategories(inputValue);
             setInputValue('');
         }
 
     }
 
     return (
-        <form onSubmit={ handleSubmit }>
-            <input 
+        <form onSubmit={handleSubmit}>
+            <input
                 type="text"
-                value={ inputValue }
-                onChange={ handleInputChange }
+                placeholder="Search..."
+                value={inputValue}
+                onChange={handleInputChange}
             />
-        </form>     
+        </form>
     )
 
 }

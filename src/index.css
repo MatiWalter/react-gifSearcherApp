@@ -1,5 +1,11 @@
 * {
+    color: white;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #202124;
+    padding: 60px;
 }
 
 h2 {
@@ -7,14 +13,21 @@ h2 {
     text-align: center;
 }
 
-body {
-    padding: 60px;
+h3 {
+    font-size: 2rem;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
 }
 
 input {
     color: grey;
     font-size: 1.2rem;
-    width: 100%;
+    margin: 0 auto;
+    width: 20%;
 }
 
 .card-grid {

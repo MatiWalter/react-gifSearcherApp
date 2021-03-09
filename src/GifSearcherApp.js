@@ -11,7 +11,6 @@ export const GifSearcherApp = () => {
             <h2>GifSearcherApp</h2>
             <AddCategory setCategories={ setCategories } />
             <hr/>
-
             <ol>
                 { 
                     // categories.map( category => (
