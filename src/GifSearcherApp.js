@@ -4,7 +4,7 @@ import { GifGrid } from './Components/GifGrid';
 
 export const GifSearcherApp = () => {
 
-    const [categories, setCategories] = useState(['Naruto']);
+    const [categories, setCategories] = useState('Naruto');
 
     return (
         <>
